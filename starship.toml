@@ -4,12 +4,12 @@ format = """
 [](pink)\
 $os\
 $username\
-[](bg:green fg:pink)\
+[](bg:purple fg:pink)\
 $directory\
-[](fg:green bg:purple)\
+[](fg:purple bg:green)\
 $git_branch\
 $git_status\
-[](fg:purple bg:yellow)\
+[](fg:green bg:yellow)\
 $c\
 $rust\
 $golang\
@@ -33,7 +33,7 @@ palette = 'dracula'
 background = '#282a36'
 current_line = '#44475a'
 foreground_origin = '#f8f8f2'
-foreground = '#5e143e'
+foreground = '#4f0736'
 comment = '#6272a4'
 cyan = '#8be9fd'
 green = '#50fa7b'
@@ -76,7 +76,7 @@ style_root = "bg:pink fg:foreground"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:foreground bg:green"
+style = "fg:foreground bg:purple"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -90,12 +90,12 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:purple"
-format = '[[ $symbol $branch ](fg:foreground bg:purple)]($style)'
+style = "bg:green"
+format = '[[ $symbol $branch ](fg:foreground bg:green)]($style)'
 
 [git_status]
-style = "bg:purple"
-format = '[[($all_status$ahead_behind )](fg:foreground bg:purple)]($style)'
+style = "bg:green"
+format = '[[($all_status$ahead_behind )](fg:foreground bg:green)]($style)'
 
 [nodejs]
 symbol = ""
@@ -150,7 +150,7 @@ format = '[[ $symbol( $version) ](fg:foreground bg:yellow)]($style)'
 [docker_context]
 symbol = ""
 style = "bg:orange"
-format = '[[ $symbol( $context) ](fg:purple bg:orange)]($style)'
+format = '[[ $symbol( $context) ](fg:green bg:orange)]($style)'
 
 [time]
 disabled = false
@@ -168,4 +168,4 @@ error_symbol = '[](bold fg:red)'
 vimcmd_symbol = '[](bold fg:cyan)'
 vimcmd_replace_one_symbol = '[](bold fg:cyan)'
 vimcmd_replace_symbol = '[](bold fg:cyan)'
-vimcmd_visual_symbol = '[](bold fg:green)'
+vimcmd_visual_symbol = '[](bold fg:purple)'

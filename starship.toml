@@ -1,15 +1,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](purple)\
+[](pink)\
 $os\
 $username\
-[](bg:green fg:purple)\
+[](bg:green fg:pink)\
 $directory\
-[](fg:green bg:pink)\
+[](fg:green bg:purple)\
 $git_branch\
 $git_status\
-[](fg:pink bg:yellow)\
+[](fg:purple bg:yellow)\
 $c\
 $rust\
 $golang\
@@ -33,7 +33,7 @@ palette = 'dracula'
 background = '#282a36'
 current_line = '#44475a'
 foreground_origin = '#f8f8f2'
-foreground = '#40374c'
+foreground = '#5e143e'
 comment = '#6272a4'
 cyan = '#8be9fd'
 green = '#50fa7b'
@@ -45,7 +45,7 @@ yellow = '#f1fa8c'
 
 [os]
 disabled = false
-style = "bg:purple fg:foreground"
+style = "bg:pink fg:foreground"
 
 [os.symbols]
 Windows = "󰍲"
@@ -71,8 +71,8 @@ Pop = ""
 
 [username]
 show_always = true
-style_user = "bg:purple fg:foreground"
-style_root = "bg:purple fg:foreground"
+style_user = "bg:pink fg:foreground"
+style_root = "bg:pink fg:foreground"
 format = '[ $user ]($style)'
 
 [directory]
@@ -90,12 +90,12 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:pink"
-format = '[[ $symbol $branch ](fg:foreground bg:pink)]($style)'
+style = "bg:purple"
+format = '[[ $symbol $branch ](fg:foreground bg:purple)]($style)'
 
 [git_status]
-style = "bg:pink"
-format = '[[($all_status$ahead_behind )](fg:foreground bg:pink)]($style)'
+style = "bg:purple"
+format = '[[($all_status$ahead_behind )](fg:foreground bg:purple)]($style)'
 
 [nodejs]
 symbol = ""
@@ -150,7 +150,7 @@ format = '[[ $symbol( $version) ](fg:foreground bg:yellow)]($style)'
 [docker_context]
 symbol = ""
 style = "bg:orange"
-format = '[[ $symbol( $context) ](fg:pink bg:orange)]($style)'
+format = '[[ $symbol( $context) ](fg:purple bg:orange)]($style)'
 
 [time]
 disabled = false
